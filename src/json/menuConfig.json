@@ -1,0 +1,22 @@
+[
+    {
+        "title": "品类管理",
+        "icon": "icon-pinleiguanli",
+        "url": "categoryManage"
+    },
+    {
+        "title": "产品管理",
+        "icon": "icon-peijianguanli",
+        "url": "partsManage"
+    },
+    {
+        "title": "开通服务",
+        "icon": "icon-kaitongfuwu",
+        "url": "serverManage"
+    },
+    {
+        "title": "退出",
+        "icon": "icon-tuichu",
+        "url": "logout"
+    }
+]
