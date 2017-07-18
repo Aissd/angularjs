@@ -1,7 +1,18 @@
 @import "./css/config.scss";
+body {
+    font-family: "Microsoft YaHei";
+    background-color: $color-E;
+    color: $color-5;
+    font-size: 16px;
+}
 
-body {font-family: "Microsoft YaHei"; background-color: $color-E; color: $color-5; font-size: 16px;}
-ul,li{ margin:0; padding:0; list-style:none;}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 table {
-  table-layout: fixed
+    table-layout: fixed;
 }

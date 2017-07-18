@@ -1,3 +1,5 @@
-<button ng-click="$ctrl.show = !$ctrl.show">点击打开select选择框</button>
+<select-component ng-if="$ctrl.datas && $ctrl.show" config="$ctrl.datas" fn="$ctrl.getValue(value)"></select-component>
 
-<select-component ng-if="$ctrl.show"></select-component>
+<p class="demo-title" ng-click="$ctrl.showSelect()" ng-bind="$ctrl.selected.name ? $ctrl.selected.name : '--- 选择一个正在经营的品类 ---'"></p>
+
+<button ng-click="$ctrl.goNext()">去下一页</button>

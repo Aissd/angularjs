@@ -5,14 +5,27 @@ import './selectComponent.scss';
 class selectComponentController {
     constructor() {
         this.$onInit = () => {
-            alert(1);
+            
         };
+    }
+
+    // 点击选项
+    selectItem(target, event, index) {
+        if(event.target.nodeName == 'LABEL') return;
+        console.log(this.config);
+        this.config[index] = target;
+        console.log(this.config);
+        this.fn({value: target});
     }
 }
 
 export default angular.module('app.selectComponent', [])
-    .component('selectConponent', {
+    .component('selectComponent', {
         template: template,
-        controller: [selectComponentController]
+        controller: [selectComponentController],
+        bindings: {
+            config: '=',
+            fn: '&'
+        }
     })
     .name;

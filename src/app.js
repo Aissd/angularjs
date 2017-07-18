@@ -39,12 +39,8 @@ let appComponent = {
 appComponent.$inject = ['$rootScope', '$state', '$stateParams'];
 
 //app.run
-let appRun = ['$rootScope', '$state', '$stateParams', '$timeout', function ($rootScope, $state, $stateParams, $timeout) {
-    $rootScope.$state = $state;
+let appRun = ['$rootScope', function ($rootScope) {
     console.log($rootScope);
-    console.log($state);
-    console.log($stateParams);
-    console.log($timeout);
     $rootScope.$on('$stateChangeStart', function (event, toState) {
         console.log(event);
         console.log(toState);
