@@ -17,7 +17,8 @@ module.exports = {
         "wxUploadImage": true,
         "initWechatApi": true,
         "CosCloud": true,
-        "TDAPP": true
+        "TDAPP": true,
+        "process": true
     },
     "rules": {
         "indent": [
