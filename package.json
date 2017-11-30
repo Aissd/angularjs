@@ -4,8 +4,8 @@
   "description": "ES6 + Webpack +  Angular",
   "main": "src/app.js",
   "scripts": {
-    "start": "webpack-dev-server --host www.tao.com",
-    "dev": "webpack-dev-server --host www.tao.com",
+    "start": "webpack-dev-server --host localhost",
+    "dev": "webpack-dev-server --host localhost",
     "build": "rimraf www/static && webpack -p --bail --progress --profile --colors",
     "build-dev": "rimraf www-dev/static && webpack --bail --progress --profile --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
